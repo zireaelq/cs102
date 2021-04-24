@@ -1,8 +1,5 @@
-def get_greeting(name: str) -> str:
-    if name == "World":
-        text = "Hello, World!"
-    if name == "Anonymous":
-        text = "Hello, Anonymous!"
+def get_greeting(name):
+    text = "Hello, {name}!".format(name=name) 
     return text
 
 
