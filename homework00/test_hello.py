@@ -10,5 +10,5 @@ class HelloTestCase(unittest.TestCase):
             ("Anonymous", "Hello, Anonymous!"),
         ]
         for i, (name, message) in enumerate(cases, start=1):
-            with self.subTest(case=i):
-                self.assertEqual(message, get_greeting(name))
+            # with self.subTest(case=i):
+            self.assertEqual(message, get_greeting(name))
